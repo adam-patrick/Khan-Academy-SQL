@@ -1,0 +1,22 @@
+/* Create your own store! Your store should sell one type of things, like clothing or bikes, whatever you want your store to specialize in. You should have a table for all the items in your store, and at least 5 columns for the kind of data you think you'd need to store. 
+You should sell at least 15 items, and use select statements to order your items by price and show at least one statistic about the items. */
+
+CREATE TABLE product_table(id INTEGER primary key, name TEXT, price NUMERIC, QTY INTEGER, product_type TEXT);
+
+INSERT INTO product_table VALUES (1, "apple", 0.99, 10, "FRUIT");
+INSERT INTO product_table VALUES (2, "orange", 0.99, 19, "FRUIT");
+INSERT INTO product_table VALUES (3, "pear", 0.50, 8, "FRUIT");
+INSERT INTO product_table VALUES (4, "pear", 0.50, 8, "FRUIT");
+INSERT INTO product_table VALUES (5, "pear", 0.50, 8, "FRUIT");
+INSERT INTO product_table VALUES (6, "pear", 0.50, 8, "FRUIT");
+INSERT INTO product_table VALUES (7, "pear", 0.50, 8, "FRUIT");
+INSERT INTO product_table VALUES (8, "pear", 0.50, 8, "FRUIT");
+INSERT INTO product_table VALUES (9, "pear", 0.50, 8, "FRUIT");
+INSERT INTO product_table VALUES (10, "pear", 0.50, 8, "FRUIT");
+INSERT INTO product_table VALUES (11, "pear", 0.50, 8, "FRUIT");
+INSERT INTO product_table VALUES (12, "pear", 0.50, 8, "FRUIT");
+INSERT INTO product_table VALUES (13, "pear", 0.50, 8, "FRUIT");
+INSERT INTO product_table VALUES (14, "pear", 0.50, 8, "FRUIT");
+INSERT INTO product_table VALUES (15, "pear", 0.50, 8, "FRUIT");
+
+SELECT SUM(price) FROM product_table;
